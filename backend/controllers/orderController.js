@@ -2,7 +2,8 @@ const orderModel = require("../models/orderModel");
 const userModel = require("../models/userModel");
 const Stripe = require("stripe");
 
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "sk_test_51QCm6RFwrBiDM9TeDv3vkVNxB0jHnINS17MRwcSW8MAnkOqGS9CRn8Tf1nTeOEEJ0BEMwNWAZ7eHr3v9bQTozLwy007VpZ7Y5P";
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY 
+    
 const stripe = new Stripe(stripeSecretKey);
 
 // Placing user order from frontend
