@@ -39,7 +39,7 @@ const Login = ({ onSignUpClick, onClose, onLoginSuccess }) => { // Add onLoginSu
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/login",
+        "https://food-delivery-nnwo.onrender.com/api/user/login",
         loginData
       );
 
