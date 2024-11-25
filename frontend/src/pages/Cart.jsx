@@ -86,7 +86,7 @@ const Cart = () => {
                     >
                       <div className="flex flex-col md:flex-row items-center space-x-4 w-full">
                         <img
-                          src={`http://localhost:5000/images/${item.productId.image}`}
+                          src={`https://food-delivery-nnwo.onrender.com/images/${item.productId.image}`}
                           alt={item.productId.name}
                           className="w-24 h-24 object-cover rounded-lg"
                         />
