@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       className="min-h-[42vw] mb-20 flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:px-20 px-5 bg-cover bg-center rounded-2xl"
-      style={{ backgroundImage: "url('/src/assets/hero_img.png')" }}
+      style={{ backgroundImage: "url('/hero_img.png')" }}
     >
       <div className="w-full lg:w-2/3 space-y-5 text-center lg:text-left">
         <h1 className="text-white font-semibold text-4xl lg:text-6xl leading-snug fade-in">
