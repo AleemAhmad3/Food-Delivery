@@ -38,7 +38,7 @@ const SignUp = ({ onLoginClick, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/user/register", formData);
+      const response = await axios.post("https://food-delivery-nnwo.onrender.com/api/user/register", formData);
       
       if (response.data.success) {
         // Use sessionStorage or localStorage based on "Stay Logged In"
