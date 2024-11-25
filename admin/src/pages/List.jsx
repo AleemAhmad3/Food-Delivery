@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // import toastify styles
 
 const List = () => {
-  const url = "http://localhost:5000";
+  const url = "https://food-delivery-nnwo.onrender.com";
 
   const [foodList, setFoodList] = useState([]); // Initialize as an empty array
   const [loading, setLoading] = useState(true);
