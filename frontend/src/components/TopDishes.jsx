@@ -14,7 +14,7 @@ const TopDishes = () => {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/food/list');
+        const response = await axios.get('https://food-delivery-nnwo.onrender.com/api/food/list');
         // Set dishes to the data field in the response
         if (response.data.success) {
           setDishes(response.data.data); // Access the data array
@@ -38,7 +38,7 @@ const TopDishes = () => {
           <DishesCard
             key={dish._id}
             id={dish._id}
-            img={`http://localhost:5000/images/${dish.image}`} // Ensure correct image URL
+            img={`https://food-delivery-nnwo.onrender.com/images/${dish.image}`} // Ensure correct image URL
             title={dish.name}
             description={dish.description}
             price={dish.price}
