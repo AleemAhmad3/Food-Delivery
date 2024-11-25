@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-const API_URL = 'http://localhost:5000/api/cart';
+const API_URL = 'https://food-delivery-nnwo.onrender.com/api/cart';
 
 export const addToCart = async (token, itemid, quantity = 1) => {
     try {
