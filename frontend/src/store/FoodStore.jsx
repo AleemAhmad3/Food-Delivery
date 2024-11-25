@@ -8,11 +8,11 @@ const useFoodStore = create((set) => ({
   fetchFoodItems: async () => {
     set({ loading: true });
     try {
-      const response = await axios.get('http://localhost:5000/api/food/list');
+      const response = await axios.get('https://food-delivery-nnwo.onrender.com/api/food/list');
       // Add image URL directly to each food item
       const foodItemsWithImages = response.data.data.map((item) => ({
         ...item,
-        imageUrl: `http://localhost:5000/images/${item.image}`, // Construct image URL here
+        imageUrl: `https://food-delivery-nnwo.onrender.com/images/${item.image}`, // Construct image URL here
       }));
       set({ foodItems: foodItemsWithImages, loading: false });
     } catch (error) {
