@@ -9,7 +9,7 @@ const stripe = new Stripe(stripeSecretKey);
 // Placing user order from frontend
 const placeOrder = async (req, res) => {
 
-    const frontendUrl = "http://localhost:5174"; // Changed to camelCase for consistency
+    const frontendUrl = "https://food-delivery-frontend-6tpo.onrender.com"; // Changed to camelCase for consistency
     try {
         // Create a new order using the user ID from the authenticated request
         const newOrder = new orderModel({
