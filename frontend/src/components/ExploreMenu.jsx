@@ -67,7 +67,7 @@ const ExploreMenu = () => {
           <DishesCard
             key={dish._id}
             id={dish._id}
-            img={`http://localhost:5000/images/${dish.image}`} // Update the image source
+            img={`https://food-delivery-nnwo.onrender.com/images/${dish.image}`} // Update the image source
             title={dish.name}
             description={dish.description}
             price={dish.price}
