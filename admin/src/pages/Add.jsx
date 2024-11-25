@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Add = () => {
-  const url = "http://localhost:5000";
+  const url = "https://food-delivery-nnwo.onrender.com";
 
   const [image, setImage] = useState(null);
   const [name, setName] = useState("");
