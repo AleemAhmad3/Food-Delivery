@@ -9,7 +9,7 @@ const Orders = () => {
   // Fetch orders from the backend
   const fetchAllOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/orders/list");
+      const response = await axios.get("https://food-delivery-nnwo.onrender.com/api/orders/list");
       if (response.data.success) {
         const updatedOrders = response.data.data.map((order) => ({
           ...order,
@@ -29,7 +29,7 @@ const Orders = () => {
     const newStatus = event.target.value;
 
     try {
-      const response = await axios.post("http://localhost:5000/api/orders/status", {
+      const response = await axios.post("https://food-delivery-nnwo.onrender.com/api/orders/status", {
         orderid: orderId,
         status: newStatus,
       });
