@@ -13,7 +13,7 @@ const ExploreMenu = () => {
   useEffect(() => {
     const fetchFoodItems = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/food/list");
+        const response = await axios.get("https://food-delivery-nnwo.onrender.com/api/food/list");
         setFoodItems(response.data.data); // Adjust according to your API response structure
         setLoading(false);
       } catch (err) {
