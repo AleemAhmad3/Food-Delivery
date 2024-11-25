@@ -14,7 +14,7 @@ const MyOrders = () => {
   const fetchOrders = async (token) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/orders/userorders",
+        "https://food-delivery-nnwo.onrender.com/api/orders/userorders",
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
