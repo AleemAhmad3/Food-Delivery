@@ -9,7 +9,7 @@ const Verify = () => {
     const navigate = useNavigate();
 
     const verifyPayment = async () => {
-        const response = await axios.post("http://localhost:5000/api/orders/verify", {success,orderid});
+        const response = await axios.post("https://food-delivery-nnwo.onrender.com/api/orders/verify", {success,orderid});
         if(response.data.success){
             navigate("/myorders");
         }
