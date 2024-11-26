@@ -11,14 +11,14 @@ export const addToCart = async (token, itemid, quantity = 1) => {
         });
 
         // Show success toast message
-        toast.success('Item added to cart!', { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.success('Item added to cart!', { position: "bottom-right" });
 
         return response.data;
     } catch (error) {
         console.error("Error adding to cart:", error);
 
         // Show error toast message
-        toast.error('Failed to add item to cart!', { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.error('Failed to add item to cart!', { position: "bottom-right" });
 
         return { success: false, message: "Failed to add to cart." }; 
     }
@@ -33,14 +33,14 @@ export const removeFromCart = async (token, itemid) => {
         });
 
         // Show success toast message
-        toast.success('Item removed from cart!', { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.success('Item removed from cart!', { position: "bottom-right" });
 
         return response.data; 
     } catch (error) {
         console.error("Error removing from cart:", error);
 
         // Show error toast message
-        toast.error('Failed to remove item from cart!', { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.error('Failed to remove item from cart!', { position: "bottom-right" });
 
         if (error.response) {
             return { success: false, message: error.response.data.message || "Failed to remove from cart." }; 
@@ -63,7 +63,7 @@ export const getCart = async (token) => {
         console.error("Error fetching cart:", error);
 
         // Show error toast message
-        toast.error('Failed to fetch cart items!', { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.error('Failed to fetch cart items!', {position: "bottom-right" });
 
         return { success: false, message: "Failed to fetch cart items." };
     }
@@ -80,14 +80,14 @@ export const updateCartQuantity = async (token, itemid, action) => {
 
         // Show success toast message
         const actionText = action === "increase" ? 'increased' : 'decreased';
-        toast.success(`Item quantity ${actionText}!`, { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.success(`Item quantity ${actionText}!`, { position: "bottom-right" });
 
         return response.data; 
     } catch (error) {
         console.error("Error updating cart quantity:", error);
 
         // Show error toast message
-        toast.error('Failed to update cart quantity!', { position: toast.POSITION.BOTTOM_RIGHT });
+        toast.error('Failed to update cart quantity!', { position: "bottom-right" });
 
         throw error;
     }
