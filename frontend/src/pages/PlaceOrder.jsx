@@ -43,6 +43,7 @@ const PlaceOrder = () => {
     // Get the token from local or session storage
     const token =
       localStorage.getItem("token") || sessionStorage.getItem("token");
+     console.log("Token:", token); 
 
     // Decode the token to get the user ID
     let userId;
