@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 const API_URL = 'https://food-delivery-nnwo.onrender.com/api/cart';
 
 export const addToCart = async (token, itemid, quantity = 1) => {
-    console.log('addToCart triggered');
+    console.log('addToCart triggered for item:', itemid);
     try {
         const response = await axios.post(`${API_URL}/add`, { itemid, quantity }, {
             headers: {
