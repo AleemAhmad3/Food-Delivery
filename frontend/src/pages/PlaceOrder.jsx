@@ -78,6 +78,7 @@ const PlaceOrder = () => {
         postalCode: formData.postalCode,
       },
     };
+    console.log("Order Data:", orderData);
 
     try {
       const response = await axios.post(
